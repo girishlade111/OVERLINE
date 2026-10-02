@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: "export",
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     '.space-z.ai',
   ],
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
 };
